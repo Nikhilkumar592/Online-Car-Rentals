@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+
+<head>
+    <style>
+        body {
+            margin: 0px;
+            background-image: url(2492653.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        #header {
+            height: 100px;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.1);
+            display: flex;
+            justify-content: space-between;
+        }
+
+        #logo {
+            display: flex;
+            margin-top: 10px;
+            margin-left: 10px;
+        }
+
+        h1 {
+            margin-left: 70px;
+        }
+
+        ul li {
+            display: inline-block;
+            margin: 0 30px;
+
+        }
+
+        a {
+            color: white;
+            text-decoration: none;
+            font-size: 20px;
+        }
+
+        #body {
+            height: 500px;
+            width: 100%;
+
+
+        }
+
+        #box {
+            height: 300px;
+            width: 300px;
+            border: 1px solid white;
+            ;
+            margin-top: 60px;
+            margin-right: 150px;
+            float: inline-end;
+            border-radius: 30px;
+        }
+
+        input[typ=text]
+        {
+            border-radius: 12px;
+        }
+        input[typ=password]
+        {
+            border-radius: 12px;
+        }
+
+        th {
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="header">
+        <div id="logo">
+            <img src="logo.jpeg" height="80" width="80">
+            <h1 style="color: white;">
+                CAR RENTALS
+            </h1>
+        </div>
+        <div id="links">
+            <ul>
+                <li><a href="index.html">
+                        <h3 style="color:white">HOME</h3>
+                    </a></li>
+                    </a></li>
+                <li><a href="contact us.html">
+                        <h3 style="color:white">CONTACT US</h3>
+                    </a></li>
+                <li><a href="about us.html">
+                        <h3 style="color:white">ABOUT US</h3>
+                    </a></li>
+                    <li><a href="register.html"><h3 style="color: white;">REGISTER</h3> </a></li>
+
+            </ul>
+        </div>
+    </div>
+    <div id="body">
+
+        <div id="box">
+            <table>
+                <h2 style="color: white;"><center> Forgot Password</h2></center>
+                <tr>
+                    <th>
+                        UserName:
+                    </th>
+                    <td><input type="text" name="username" placeholder="enter your user name"></td>
+                </tr>
+                <tr>
+                    <th>phoneno:</th>
+                    <td>
+                        <input type="text" name="phoneno" placeholder="enter your phoneno">
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+
+                    </th>
+                    <td>
+                        <input type="submit" value="GetOTP">
+                        <input type="reset" value="Reset">
+                    </td>
+                </tr>
+                <tr style="color: whitesmoke;">
+                    <th></th>
+                 <td>
+                    Login With Another Account?<a href="login.html"> Login</a>
+                 </td>
+                </tr>
+                
+                <tr style="color:white ;">
+                    <th></th>
+                    <td>
+                    Create an Account?<a href="register.html">SignUp</a>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

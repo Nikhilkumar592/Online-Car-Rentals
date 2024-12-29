@@ -1,0 +1,174 @@
+emai<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+
+<head>
+    <style>
+        body {
+            margin: 0px;
+            background: linear-gradient(rgb(68, 200, 212),rgb(204, 249, 149)); 
+            background-image: url(wp1908719.jpg);
+        }
+
+        #header {
+            height: 100px;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.1);
+            display: flex;
+            justify-content: space-between;
+        }
+
+        #logo {
+            display: flex;
+            margin-top: 10px;
+            margin-left: 10px;
+        }
+
+        h1 {
+            margin-left: 70px;
+        }
+
+        ul li {
+            display: inline-block;
+            margin: 0 30px;
+
+        }
+
+        a {
+            color: white;
+            text-decoration: none;
+            font-size: 20px;
+        }
+
+        #body {
+            height: 500px;
+            width: 100%;
+
+
+        }
+
+        #box {
+            height: 450px;
+            width: 700px;
+            border: 1px solid rgb(245, 242, 242);
+            margin-top: 60px;
+            margin-right: 400px;
+            float: inline-end;
+            border-radius: 30px;
+            background-repeat: no-repeat;
+            background-size: cover;
+
+
+
+        }
+        input[type=text]
+        {
+            border-radius: 12px;
+        }
+        input[type=email]
+        {
+            border-radius: 12px;
+        }
+        input[type=password]
+        {
+            border-radius: 12px;
+        }
+
+        th {
+            color: rgb(252, 250, 250);
+        }
+    </style>
+</head>
+
+<body>
+    <div id="header">
+        <div id="logo">
+            <img src="logo.jpeg" height="80" width="80">
+            <h1 style="color: white;">
+                CAR RENTALS
+            </h1>
+        </div>
+        <div id="links">
+            <ul>
+                <li><a href="index.html">
+                        <h3 style="color:white">HOME</h3>
+                    </a></li>
+                <li><a href="contactus.html">
+                        <h3 style="color:white">CONTACT US</h3>
+                    </a></li>
+                <li><a href="aboutus.html"><h3 style="color:white">ABOUT US</h3>
+                    </a></li>
+                    <li><a href="login.html"><h3 style="color: white;">LOGIN</h3> </a></li>
+
+            </ul>
+        </div>
+    </div>
+    <div id="body">
+        <div id="box">
+            <form action="registeraction.jsp" method="post">
+            <table>
+                <h2 style="color: rgb(249, 245, 245);"><center>Customer Register</h2></center>
+               
+               
+               
+               
+                <tr>
+                  <th> Full Name:</th>
+                  <td><input type="text" name="fullname" placeholder="enter your full name"></td>
+                </tr>
+                <tr>
+                    <th>Phone no:</th>
+                    <td><input type="text" name="phoneno" placeholder="enter your phoneno"></td>
+                </tr>
+                <tr>
+                    <th>
+                        email:
+                    </th>
+                    <td><input type="email" name="email" placeholder="enter your email"></td>
+                </tr>
+                <tr>
+                    <th>
+                        Age:
+                    </th>
+                    <td><input type="text" name="age" placeholder="enter your age"></td>
+                </tr>
+                <tr>
+                    <th> Address:</th>
+                    <td><textarea   rows="4" cols="30" name="address"></textarea></td>
+                </tr>
+                <tr>
+                    <th>Username:</th>
+                    <td> <input type="text" name="username" placeholder="enter your username"></td>
+                </tr>
+                <tr>
+                    <th>Password:</th>
+                    <td>
+                        <input type="password" name="password" placeholder="enter your password">
+                    </td>
+                </tr>
+               
+                <tr>
+ <td><th>
+    <input type="submit" value="Sign Up">
+    <input type="reset" value="Reset">
+     </th>
+</td>
+</tr>
+                               
+
+                <tr style="color:rgb(240, 236, 236) ;">
+                    <th></th>
+                    <td>
+                  <h3 > Already having Account</h3><a href="login.html">login</a>
+                    </td>
+                </tr>
+            </table>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

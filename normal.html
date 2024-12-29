@@ -1,0 +1,94 @@
+ body{
+                margin: 0px;
+                background-image: url("car.jpg");
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            #header{
+                height:120px;
+                width:100%;
+                background:rgba(0,0,0,0.3);
+                display:flex;
+                justify-content:space-between;
+                list-style:none;
+                
+            }
+            #logo{
+                display:flex;
+                height: 100px;
+                width: 100px;
+                
+                
+            }
+            a{
+                text-decoration: none;
+                font-size: 20px; 
+                font-style: italic;
+                color:whitesmoke;
+                display: flex;
+                
+
+                
+            }
+            #links{
+                height: 100px;
+                justify-content: space-between;
+                display: flex;
+                width:100px;
+                
+            }
+            ul li{
+                text-decoration: none;
+                list-style: none;
+                float: right;
+                width:100px;
+                life-style:none;
+                justify-content: space-between;
+                display: inline-block;
+            }
+            #body{
+                height:500px;
+                width:100%;
+            }
+            h1{
+                color:white;
+            }
+            pre{
+                font-size:30px;
+            } 
+ </style>
+    </head>
+    <body>
+        <div id="header">
+            <div id="logo">
+                <img src="logo.jpeg">
+               <h1>CarRental</h1>
+            </div>
+        </div>
+             <div id="links">
+                
+                  <center>    
+                <ul>
+                    <li><a href="customerhome.jsp"><h3 style="color:white">Home</h3></a></li>
+                    <li><a href="viewprofie.jsp"><h3 style="color:white">ViewProfile</h3></a></li>
+                    <li><a href="update.jsp"><h3 style="color:white">Update</h3></a></li>
+                    <li><a href="login.html"><h3 style="color:white">LogOut</h3></a></li>
+                </ul>
+             </center>
+            </div> 
+           
+        
+        <div id="body">
+            <%
+             String username=(String)session.getAttribute("username");
+             String email=(String)session.getAttribute("email");
+            
+            %>
+            <center>
+                <h1>customerhome</h1>
+                <h1><%=username%></h1>
+                <h1><%=email %></h1>
+            </center>
+        </div>
+    </body>
+</html>
